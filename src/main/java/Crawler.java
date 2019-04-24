@@ -89,7 +89,7 @@ public class Crawler {
                             con.setConnectTimeout(5 * 1000);
                             // 输入流
                             InputStream is = con.getInputStream();
-                            run.addPicture(is, XWPFDocument.PICTURE_TYPE_JPEG, picURL, 480, 900);
+                            run.addPicture(is, XWPFDocument.PICTURE_TYPE_JPEG, picURL, 5000000, 10000000);
                             run.addBreak(BreakType.PAGE);
                             is.close();
 
